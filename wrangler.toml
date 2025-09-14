@@ -1,0 +1,17 @@
+# wrangler.toml
+
+name = "my-ai-worker"
+main = "src/index.js"
+compatibility_date = "2023-12-01"
+
+# 绑定 AI 功能
+# 这使得你可以在代码中通过 env.AI 来访问 Workers AI
+[ai]
+binding = "AI"
+
+# 绑定 R2 存储桶
+# 将 'math-images' 替换为你之前创建的 R2 存储桶的名称
+# 这使得你可以在代码中通过 env.R2_BUCKET 来访问它
+[[r2_buckets]]
+binding = "R2_BUCKET"
+bucket_name = "math-images"
