@@ -1,6 +1,6 @@
 # wrangler.toml
 
-name = "my-ai-worker"
+name = "yunke"
 main = "src/index.js"
 compatibility_date = "2023-12-01"
 
